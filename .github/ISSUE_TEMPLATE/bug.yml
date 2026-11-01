@@ -1,0 +1,36 @@
+name: Баг
+description: Продукт работает не так, как должен
+type: Баг
+projects: ["svyazka-platform/1"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что случилось
+      description: Что увидел пользователь, одним-двумя предложениями.
+      placeholder: После сохранения форма показывает ошибку, хотя данные сохранились.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Как повторить
+      description: Шаги, чтобы увидеть это ещё раз. Если не повторяется, так и напиши.
+      placeholder: |
+        1. Открыть настройки
+        2. Изменить название
+        3. Нажать «Сохранить»
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Как должно быть
+      placeholder: Форма сообщает, что всё сохранено.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Чем подтвердить
+      description: Логи, скриншот, ссылка. Без токенов, паролей и персональных данных клиентов.

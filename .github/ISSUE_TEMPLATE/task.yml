@@ -1,0 +1,26 @@
+name: Задача
+description: Конкретная работа, которая не меняет поведение продукта
+type: Задача
+projects: ["svyazka-platform/1"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Что сделать
+      placeholder: Настроить автоматическую сборку сервиса при пуше.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Зачем
+      placeholder: Сейчас сборку запускают вручную.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Когда готово
+      placeholder: После пуша в main новая сборка появляется сама.
+    validations:
+      required: true

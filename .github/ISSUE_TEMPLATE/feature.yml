@@ -1,0 +1,35 @@
+name: Фича
+description: Новая возможность продукта
+type: Фича
+projects: ["svyazka-platform/1"]
+body:
+  - type: textarea
+    id: why
+    attributes:
+      label: Зачем
+      description: Кому это нужно и какую проблему решает.
+      placeholder: Сотрудники не видят, какие обращения ждут ответа дольше часа.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Что должно получиться
+      description: Как это выглядит для пользователя, когда готово.
+      placeholder: В списке долгие ожидания подсвечены и стоят сверху.
+    validations:
+      required: true
+  - type: textarea
+    id: out
+    attributes:
+      label: Что не делаем
+      description: Что похоже на эту задачу, но в неё не входит.
+      placeholder: Уведомления пока не делаем.
+  - type: textarea
+    id: done
+    attributes:
+      label: Как проверить
+      description: Что сделать, чтобы убедиться, что всё работает.
+      placeholder: Оставить обращение без ответа на час и увидеть его первым в списке.
+    validations:
+      required: true
